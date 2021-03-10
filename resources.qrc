@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img/human_diagram_back.jpg</file>
+        <file>img/human_diagram_front.jpg</file>
+    </qresource>
+</RCC>
