@@ -2,5 +2,12 @@
     <qresource prefix="/resources">
         <file>img/human_diagram_back.jpg</file>
         <file>img/human_diagram_front.jpg</file>
+        <file>img/human_diagram_lowerbody.jpg</file>
+        <file>img/human_diagram_core.jpg</file>
+        <file>img/human_diagram_rightArm.jpg</file>
+        <file>img/human_diagram_leftArm.jpg</file>
+        <file>img/human_diagram_chest.jpg</file>
+        <file>img/Colorful Simple Modern Science Quiz Education Presentation.png</file>
+        <file>img/Orange and White Modern Teamwork Keynote Presentation.png</file>
     </qresource>
 </RCC>

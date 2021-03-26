@@ -20,6 +20,10 @@ private slots:
 
     //void on_UpperBodyButton1_pressed();
 
+    //void on_UpperBodyButton1_pressed();
+
+
+
 private:
     Ui::MainWindow *ui;
 };

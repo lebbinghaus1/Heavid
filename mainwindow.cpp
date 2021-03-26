@@ -24,3 +24,10 @@ MainWindow::~MainWindow()
 {
     ui->listWidget->addItem("push ups");
 }*/
+
+/*void MainWindow::on_UpperBodyButton1_pressed()
+{
+
+}*/
+
+
