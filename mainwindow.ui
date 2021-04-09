@@ -671,6 +671,75 @@ font: 75 14pt &quot;BIZ UDPGothic&quot;;</string>
          <string/>
         </property>
        </widget>
+       <widget class="QLabel" name="ExercisesTab">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>490</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>BIZ UDPGothic</family>
+          <pointsize>14</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 179, 92);
+font: 75 14pt &quot;BIZ UDPGothic&quot;;</string>
+        </property>
+        <property name="text">
+         <string>   Exercises </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="exercisesTabIcon">
+        <property name="geometry">
+         <rect>
+          <x>997</x>
+          <y>502</y>
+          <width>21</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/resources/img/icons8-add-list-26.png);
+background-color: rgb(255, 179, 92);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="showExercisesListButton">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>490</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 179, 92);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
        <zorder>backgroundImage</zorder>
        <zorder>bodydiagram</zorder>
        <zorder>LowerBodyButton</zorder>
@@ -691,6 +760,9 @@ font: 75 14pt &quot;BIZ UDPGothic&quot;;</string>
        <zorder>workoutPlanTabIcon</zorder>
        <zorder>showWorkoutListButton</zorder>
        <zorder>filterButton</zorder>
+       <zorder>ExercisesTab</zorder>
+       <zorder>exercisesTabIcon</zorder>
+       <zorder>showExercisesListButton</zorder>
       </widget>
      </item>
     </layout>
@@ -1379,6 +1451,150 @@ font: 75 14pt &quot;BIZ UDPGothic&quot;;</string>
     <hint type="destinationlabel">
      <x>74</x>
      <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showExercisesListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExercisesLabel</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>941</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showExercisesListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>UpperBodyWorkoutList</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>941</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showExercisesListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LowerBodyWorkoutList</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>941</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showExercisesListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CoreWorkoutList</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>941</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showExercisesListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideExerciseListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>941</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showExercisesListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>filterButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>941</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>948</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>showExercisesListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>714</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>941</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>workoutPlanTabIcon</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>714</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>533</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExercisesTab</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>714</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>941</x>
+     <y>532</y>
     </hint>
    </hints>
   </connection>
