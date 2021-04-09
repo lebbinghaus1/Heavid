@@ -24,6 +24,8 @@ private slots:
 
 
 
+    //void on_UpperBodyWorkoutList_itemClicked(QListWidgetItem *item);
+
 private:
     Ui::MainWindow *ui;
 };
