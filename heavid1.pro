@@ -9,10 +9,12 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    database.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    database.h \
     mainwindow.h
 
 FORMS += \
@@ -25,3 +27,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resources.qrc
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../usr/lib/release/ -lmysqlcppconn
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../usr/lib/debug/ -lmysqlcppconn
+else:unix: LIBS += -L$$PWD/../../../usr/lib/ -lmysqlcppconn
+
+INCLUDEPATH += $$PWD/../../../usr/include
+DEPENDPATH += $$PWD/../../../usr/include
