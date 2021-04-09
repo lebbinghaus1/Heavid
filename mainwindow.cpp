@@ -6,6 +6,13 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QWidget *window = new QWidget;
+
+    QGridLayout *layout = new QGridLayout;
+    window->setLayout(layout);
+
+   // QListWidgetItem *item = new QListWidgetItem;
 }
 
 MainWindow::~MainWindow()
@@ -23,4 +30,18 @@ MainWindow::~MainWindow()
 /*void MainWindow::on_UpperBodyButton1_pressed()
 {
     ui->listWidget->addItem("push ups");
+}*/
+
+/*void MainWindow::on_UpperBodyButton1_pressed()
+{
+
+}*/
+
+
+
+
+
+/*void MainWindow::on_UpperBodyWorkoutList_itemClicked(QListWidgetItem *item)
+{
+    ui->workoutPlanList->addItem("push ups");
 }*/

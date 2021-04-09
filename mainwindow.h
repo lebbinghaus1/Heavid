@@ -20,6 +20,12 @@ private slots:
 
     //void on_UpperBodyButton1_pressed();
 
+    //void on_UpperBodyButton1_pressed();
+
+
+
+    //void on_UpperBodyWorkoutList_itemClicked(QListWidgetItem *item);
+
 private:
     Ui::MainWindow *ui;
 };
