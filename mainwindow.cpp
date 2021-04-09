@@ -6,6 +6,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QWidget *window = new QWidget;
+
+    QGridLayout *layout = new QGridLayout;
+    window->setLayout(layout);
+
 }
 
 MainWindow::~MainWindow()

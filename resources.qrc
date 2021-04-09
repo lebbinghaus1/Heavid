@@ -8,6 +8,10 @@
         <file>img/human_diagram_leftArm.jpg</file>
         <file>img/human_diagram_chest.jpg</file>
         <file>img/Colorful Simple Modern Science Quiz Education Presentation.png</file>
+        <file>img/icons8-minimize-window-24.png</file>
         <file>img/Orange and White Modern Teamwork Keynote Presentation.png</file>
+        <file>img/icons8-add-list-26.png</file>
+        <file>img/icons8-filter-24.png</file>
     </qresource>
+    <qresource prefix="/"/>
 </RCC>

@@ -6,53 +6,168 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1001</width>
-    <height>593</height>
+    <width>1188</width>
+    <height>683</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>200</horstretch>
+    <verstretch>200</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListWidget" name="UpperBodyWorkoutList">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>255</horstretch>
+     <verstretch>255</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>5000</width>
+     <height>5000</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>20</y>
-      <width>241</width>
-      <height>541</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1161</width>
+      <height>631</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 255);
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QFrame" name="frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>255</horstretch>
+         <verstretch>255</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>2000</width>
+         <height>2000</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="backgroundImage">
+        <property name="geometry">
+         <rect>
+          <x>-50</x>
+          <y>-50</y>
+          <width>1081</width>
+          <height>581</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>255</horstretch>
+          <verstretch>255</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>5000</width>
+          <height>5000</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/resources/img/Orange and White Modern Teamwork Keynote Presentation.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="bodydiagram">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>14</y>
+          <width>341</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/resources/img/human_diagram_front.jpg);
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="LowerBodyButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>462</x>
+          <y>226</y>
+          <width>94</width>
+          <height>289</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#LowerBodyButton {
 
+}
+
+#LowerBodyButton:pressed{
+	border-image: url(:/resources/img/human_diagram_lowerbody.jpg);
+}
 </string>
-    </property>
-    <property name="lineWidth">
-     <number>1</number>
-    </property>
-    <item>
-     <property name="text">
-      <string>push ups</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>pull ups</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QPushButton" name="CoreButton">
-    <property name="geometry">
-     <rect>
-      <x>333</x>
-      <y>137</y>
-      <width>102</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#CoreButton {
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CoreButton">
+        <property name="geometry">
+         <rect>
+          <x>464</x>
+          <y>136</y>
+          <width>91</width>
+          <height>117</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#CoreButton {
 background-color: transparent;
 
 }
@@ -62,125 +177,125 @@ background-color: transparent;
 	border-image: url(:/resources/img/human_diagram_core.jpg);
 }
 </string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-    <property name="default">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="RightArmButton">
-    <property name="geometry">
-     <rect>
-      <x>239</x>
-      <y>96</y>
-      <width>98</width>
-      <height>211</height>
-     </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="Button">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Base">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Window">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="Button">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Base">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Window">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled>
-       <colorrole role="Button">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Base">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Window">
-        <brush brushstyle="SolidPattern">
-         <color alpha="0">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </disabled>
-     </palette>
-    </property>
-    <property name="mouseTracking">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#RightArmButton {
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="RightArmButton">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>100</y>
+          <width>88</width>
+          <height>188</height>
+         </rect>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#RightArmButton {
 background-color: transparent;
 
 }
@@ -190,83 +305,64 @@ background-color: transparent;
 	border-image: url(:/resources/img/human_diagram_rightArm.jpg);
 }
 </string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="LowerBodyButton">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>237</y>
-      <width>106</width>
-      <height>324</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#LowerBodyButton {
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ChestButton">
+        <property name="geometry">
+         <rect>
+          <x>462</x>
+          <y>69</y>
+          <width>96</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>255</horstretch>
+          <verstretch>255</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#ChestButton {
+background-color: transparent;
 
 }
 
-#LowerBodyButton:pressed{
-	border-image: url(:/resources/img/human_diagram_lowerbody.jpg);
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>0</y>
-      <width>351</width>
-      <height>561</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/resources/img/human_diagram_front.jpg);
-background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="LeftArmButton">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>94</y>
-      <width>101</width>
-      <height>214</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#LeftArmButton {
+#ChestButton:pressed{
+	
+	border-image: url(:/resources/img/human_diagram_chest.jpg);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="LeftArmButton">
+        <property name="geometry">
+         <rect>
+          <x>551</x>
+          <y>98</y>
+          <width>90</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#LeftArmButton {
 background-color: transparent;
 
 }
@@ -276,179 +372,336 @@ background-color: transparent;
 	border-image: url(:/resources/img/human_diagram_leftArm.jpg);
 }
 </string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="listWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>370</y>
-      <width>211</width>
-      <height>192</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(181, 181, 181);</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="ExercisesLabel">
-    <property name="geometry">
-     <rect>
-      <x>760</x>
-      <y>0</y>
-      <width>241</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>BIZ UDPGothic</family>
-      <pointsize>14</pointsize>
-      <weight>9</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 255);
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>20</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Select a body part!</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="hideExerciseListButton">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>90</y>
+          <width>28</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/resources/img/icons8-minimize-window-24.png);
+background-color: rgb(255, 170, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="UpperBodyWorkoutList">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>120</y>
+          <width>281</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 179, 92);
+
+
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>push ups</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>pull ups</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QListWidget" name="LowerBodyWorkoutList">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>120</y>
+          <width>281</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 179, 92);
+
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ExercisesLabel">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>80</y>
+          <width>281</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>BIZ UDPGothic</family>
+          <pointsize>14</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 179, 92);
 font: 75 14pt &quot;BIZ UDPGothic&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Exercises </string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
+        </property>
+        <property name="text">
+         <string>Exercises </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="CoreWorkoutList">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>120</y>
+          <width>281</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 179, 92);
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="workoutPlanList">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>120</y>
+          <width>281</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 179, 92);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="WorkoutListLabel">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>281</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>BIZ UDPGothic</family>
+          <pointsize>14</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 179, 92);
+font: 75 14pt &quot;BIZ UDPGothic&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Workout List</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="hideWorkoutListButton">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>90</y>
+          <width>28</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/resources/img/icons8-minimize-window-24.png);
+background-color: rgb(255, 170, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="showWorkoutListButton">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>490</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 179, 92);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="workoutPlanTabIcon">
+        <property name="geometry">
+         <rect>
+          <x>168</x>
+          <y>502</y>
+          <width>21</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/resources/img/icons8-add-list-26.png);
+background-color: rgb(255, 179, 92);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="WorkoutListTab">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>490</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>BIZ UDPGothic</family>
+          <pointsize>14</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 179, 92);
+font: 75 14pt &quot;BIZ UDPGothic&quot;;</string>
+        </property>
+        <property name="text">
+         <string>   Workout List</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="filterButton">
+        <property name="geometry">
+         <rect>
+          <x>937</x>
+          <y>93</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/resources/img/icons8-filter-24.png);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>backgroundImage</zorder>
+       <zorder>bodydiagram</zorder>
+       <zorder>LowerBodyButton</zorder>
+       <zorder>CoreButton</zorder>
+       <zorder>RightArmButton</zorder>
+       <zorder>ChestButton</zorder>
+       <zorder>LeftArmButton</zorder>
+       <zorder>label_2</zorder>
+       <zorder>UpperBodyWorkoutList</zorder>
+       <zorder>LowerBodyWorkoutList</zorder>
+       <zorder>ExercisesLabel</zorder>
+       <zorder>CoreWorkoutList</zorder>
+       <zorder>workoutPlanList</zorder>
+       <zorder>hideExerciseListButton</zorder>
+       <zorder>WorkoutListLabel</zorder>
+       <zorder>hideWorkoutListButton</zorder>
+       <zorder>WorkoutListTab</zorder>
+       <zorder>workoutPlanTabIcon</zorder>
+       <zorder>showWorkoutListButton</zorder>
+       <zorder>filterButton</zorder>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QPushButton" name="ChestButton">
-    <property name="geometry">
-     <rect>
-      <x>331</x>
-      <y>61</y>
-      <width>107</width>
-      <height>90</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#ChestButton {
-background-color: transparent;
-
-}
-
-#ChestButton:pressed{
-	
-	border-image: url(:/resources/img/human_diagram_chest.jpg);
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>10</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Select a body part!</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="LowerBodyWorkoutList">
-    <property name="geometry">
-     <rect>
-      <x>760</x>
-      <y>20</y>
-      <width>241</width>
-      <height>581</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 127);</string>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="CoreWorkoutList">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>20</y>
-      <width>256</width>
-      <height>531</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 170, 0);</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="backgroundImage">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1001</width>
-      <height>551</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>0</width>
-      <height>551</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>1611</width>
-      <height>551</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/img/Orange and White Modern Teamwork Keynote Presentation.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <zorder>backgroundImage</zorder>
-   <zorder>label</zorder>
-   <zorder>UpperBodyWorkoutList</zorder>
-   <zorder>CoreButton</zorder>
-   <zorder>RightArmButton</zorder>
-   <zorder>LowerBodyButton</zorder>
-   <zorder>LeftArmButton</zorder>
-   <zorder>listWidget_2</zorder>
-   <zorder>ExercisesLabel</zorder>
-   <zorder>ChestButton</zorder>
-   <zorder>label_2</zorder>
-   <zorder>LowerBodyWorkoutList</zorder>
-   <zorder>CoreWorkoutList</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1001</width>
+     <width>1188</width>
      <height>21</height>
     </rect>
    </property>
@@ -464,12 +717,12 @@ background-color: transparent;
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>303</x>
-     <y>209</y>
+     <x>424</x>
+     <y>234</y>
     </hint>
     <hint type="destinationlabel">
-     <x>621</x>
-     <y>212</y>
+     <x>710</x>
+     <y>303</y>
     </hint>
    </hints>
   </connection>
@@ -480,12 +733,12 @@ background-color: transparent;
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>456</x>
-     <y>165</y>
+     <x>577</x>
+     <y>190</y>
     </hint>
     <hint type="destinationlabel">
-     <x>593</x>
-     <y>157</y>
+     <x>710</x>
+     <y>248</y>
     </hint>
    </hints>
   </connection>
@@ -496,12 +749,12 @@ background-color: transparent;
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>426</x>
-     <y>403</y>
+     <x>547</x>
+     <y>428</y>
     </hint>
     <hint type="destinationlabel">
-     <x>541</x>
-     <y>585</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -512,12 +765,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>406</x>
-     <y>403</y>
+     <x>527</x>
+     <y>428</y>
     </hint>
     <hint type="destinationlabel">
-     <x>569</x>
-     <y>285</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -528,12 +781,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>385</x>
-     <y>194</y>
+     <x>506</x>
+     <y>219</y>
     </hint>
     <hint type="destinationlabel">
-     <x>543</x>
-     <y>590</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -544,12 +797,12 @@ background-color: transparent;
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>383</x>
-     <y>223</y>
+     <x>504</x>
+     <y>248</y>
     </hint>
     <hint type="destinationlabel">
-     <x>687</x>
-     <y>327</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -560,12 +813,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>382</x>
-     <y>419</y>
+     <x>503</x>
+     <y>444</y>
     </hint>
     <hint type="destinationlabel">
-     <x>687</x>
-     <y>327</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -576,12 +829,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>383</x>
-     <y>223</y>
+     <x>504</x>
+     <y>248</y>
     </hint>
     <hint type="destinationlabel">
-     <x>680</x>
-     <y>332</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -592,12 +845,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>287</x>
-     <y>222</y>
+     <x>408</x>
+     <y>247</y>
     </hint>
     <hint type="destinationlabel">
-     <x>687</x>
-     <y>327</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -608,12 +861,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>480</x>
-     <y>221</y>
+     <x>601</x>
+     <y>246</y>
     </hint>
     <hint type="destinationlabel">
-     <x>680</x>
-     <y>351</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -624,12 +877,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>480</x>
-     <y>221</y>
+     <x>601</x>
+     <y>246</y>
     </hint>
     <hint type="destinationlabel">
-     <x>687</x>
-     <y>327</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -640,12 +893,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>287</x>
-     <y>222</y>
+     <x>408</x>
+     <y>247</y>
     </hint>
     <hint type="destinationlabel">
-     <x>680</x>
-     <y>351</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -656,12 +909,12 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>384</x>
-     <y>126</y>
+     <x>505</x>
+     <y>151</y>
     </hint>
     <hint type="destinationlabel">
-     <x>687</x>
-     <y>327</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -672,12 +925,12 @@ background-color: transparent;
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>384</x>
-     <y>126</y>
+     <x>505</x>
+     <y>151</y>
     </hint>
     <hint type="destinationlabel">
-     <x>680</x>
-     <y>332</y>
+     <x>710</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -688,12 +941,444 @@ background-color: transparent;
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>384</x>
-     <y>126</y>
+     <x>505</x>
+     <y>151</y>
     </hint>
     <hint type="destinationlabel">
-     <x>680</x>
-     <y>351</y>
+     <x>710</x>
+     <y>371</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ChestButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideExerciseListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>505</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>759</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideExerciseListButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>767</x>
+     <y>449</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>454</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LowerBodyWorkoutList</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>769</x>
+     <y>449</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>151</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LeftArmButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideExerciseListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>601</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>759</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>UpperBodyWorkoutList</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>746</x>
+     <y>441</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>748</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CoreWorkoutList</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>758</x>
+     <y>452</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>716</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LowerBodyButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideExerciseListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>759</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CoreButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideExerciseListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>504</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>759</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RightArmButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideExerciseListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>759</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExercisesLabel</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>714</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RightArmButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExercisesLabel</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>424</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LowerBodyButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExercisesLabel</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>509</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LeftArmButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExercisesLabel</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>596</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CoreButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExercisesLabel</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>198</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ChestButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExercisesLabel</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkoutListLabel</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>workoutPlanList</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>workoutPlanList</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideWorkoutListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>workoutPlanTabIcon</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>533</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkoutListLabel</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkoutListTab</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>showWorkoutListButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>showWorkoutListButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>workoutPlanTabIcon</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>533</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkoutListTab</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hideWorkoutListButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>125</y>
     </hint>
    </hints>
   </connection>
