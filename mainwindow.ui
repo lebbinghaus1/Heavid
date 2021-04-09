@@ -740,6 +740,54 @@ background-color: rgb(255, 179, 92);</string>
          <bool>true</bool>
         </property>
        </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>490</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(250, 186, 161);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>610</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(250, 186, 161);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>490</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(250, 186, 161);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
        <zorder>backgroundImage</zorder>
        <zorder>bodydiagram</zorder>
        <zorder>LowerBodyButton</zorder>
@@ -763,6 +811,9 @@ background-color: rgb(255, 179, 92);</string>
        <zorder>ExercisesTab</zorder>
        <zorder>exercisesTabIcon</zorder>
        <zorder>showExercisesListButton</zorder>
+       <zorder>label</zorder>
+       <zorder>label_3</zorder>
+       <zorder>label_4</zorder>
       </widget>
      </item>
     </layout>
@@ -1595,6 +1646,86 @@ background-color: rgb(255, 179, 92);</string>
     <hint type="destinationlabel">
      <x>941</x>
      <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showExercisesListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>941</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>931</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_4</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>714</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>931</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideWorkoutListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hideExerciseListButton</sender>
+   <signal>clicked()</signal>
+   <receiver>filterButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>714</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>948</x>
+     <y>125</y>
     </hint>
    </hints>
   </connection>
