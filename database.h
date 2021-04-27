@@ -2,6 +2,7 @@
 #define DATABASE_H
 
 #include <string>
+#include <QFile>
 
 #include <cppconn/connection.h>
 #include <cppconn/driver.h>
@@ -16,6 +17,7 @@ public:
     sql::ResultSet * query(std::string);
     std::string createQueryStatement(std::string = "", std::string = "");
     std::string createDescQueryStatement(std::string= "");
+    std::unordered_map<std::string, std::string> * readServerInfo();
 };
 
 #endif // DATABASE_H

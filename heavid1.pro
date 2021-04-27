@@ -31,16 +31,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     resources.qrc
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../usr/lib/release/ -lmysqlcppconn
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../usr/lib/debug/ -lmysqlcppconn
-macx: LIBS += -L$$PWD/../../mysql-connector-c++-1.1.13-macos10.14-x86-64bit/lib/ -lmysqlcppconn.7.1.1.13
-unix:!macx: LIBS += -L$$PWD/../../../../../usr/lib/ -lmysqlcppconn
+unix:!macx: LIBS += -L/usr/lib/ -L$$PWD/mysql-connector-c++/lib/ -lmysqlcppconn
+macx:|win32: LIBS += -L$$PWD/mysql-connector-c++/lib/ -lmysqlcppconn
 
-INCLUDEPATH += $$PWD/../../../usr/include
-DEPENDPATH += $$PWD/../../../usr/include
+INCLUDEPATH += -I$$PWD/mysql-connector-c++/include -I/usr/include
+DEPENDPATH += -I$$PWD/mysql-connector-c++/include -I/usr/include
 
-INCLUDEPATH += $$PWD/../../mysql-connector-c++-1.1.13-macos10.14-x86-64bit/include
-DEPENDPATH += $$PWD/../../mysql-connector-c++-1.1.13-macos10.14-x86-64bit/include
-
-INCLUDEPATH += $$PWD/../../../../../usr/include
-DEPENDPATH += $$PWD/../../../../../usr/include
