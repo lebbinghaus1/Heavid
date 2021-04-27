@@ -95,9 +95,9 @@ std::unordered_map<std::string, std::string> * database::readServerInfo()
     }
 
     try {
-        serverLoc = lines.find("server=") + std::strlen("server=");
-        userLoc = lines.find("user=") + std::strlen("user=");
-        passwordLoc = lines.find("password=") + std::strlen("password=");
+        serverLoc = lines.find("server=") + strlen("server=");
+        userLoc = lines.find("user=") + strlen("user=");
+        passwordLoc = lines.find("password=") + strlen("password=");
 
         if(serverLoc != -1) {
             config->at("server") = lines.substr(serverLoc, lines.substr(serverLoc, lines.length() - serverLoc).find("\n"));

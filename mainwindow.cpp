@@ -26,6 +26,7 @@
 #include <iostream>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QTextStream>
 #include <fstream>
 #include <QVector>
 #include <exercise_description.h>

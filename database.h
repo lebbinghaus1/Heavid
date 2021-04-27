@@ -22,6 +22,7 @@
 
 #include <string>
 #include <QFile>
+#include <unordered_map>
 
 #include <cppconn/connection.h>
 #include <cppconn/driver.h>

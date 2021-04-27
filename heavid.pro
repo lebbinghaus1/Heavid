@@ -23,6 +23,8 @@ FORMS += \
     exercise_description.ui \
     mainwindow.ui
 
+QT += widgets
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
