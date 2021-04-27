@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/resources">
-        <file>img/human_diagram_back.jpg</file>
         <file>img/human_diagram_front.jpg</file>
         <file>img/human_diagram_lowerbody.jpg</file>
         <file>img/human_diagram_core.jpg</file>
@@ -11,9 +10,7 @@
         <file>img/icons8-minimize-window-24.png</file>
         <file>img/Orange and White Modern Teamwork Keynote Presentation.png</file>
         <file>img/icons8-add-list-26.png</file>
-        <file>img/icons8-filter-24.png</file>
         <file>img/Heavid.png</file>
-        <file>img/Heavid fin.gif</file>
         <file>img/Squats.png</file>
         <file>img/Calf Raises.png</file>
         <file>img/Pistol Squats.png</file>
