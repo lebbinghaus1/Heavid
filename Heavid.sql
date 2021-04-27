@@ -5,7 +5,7 @@ USE heavid;
 CREATE TABLE Exercise
     (ExerciseID INT NOT NULL AUTO_INCREMENT,
     ExerciseName VARCHAR(45) NOT NULL,
-    Description VARCHAR(300) NOT NULL,
+    Description TEXT NOT NULL,
     DifficultyLevel ENUM('Beginner', 'Intermediate', 'Advanced') NOT NULL,
     CONSTRAINT Exercise_pk PRIMARY KEY (ExerciseID)
 ) engine = innodb;
