@@ -1,4 +1,4 @@
-MySQL Connector/C++ files should me moved here for use with Heavid. You can download MySQL Connector/C++ here: https://dev.mysql.com/downloads/connector/cpp/
+MySQL Connector/C++ files should be moved here for use with Heavid. You can download MySQL Connector/C++ here: https://dev.mysql.com/downloads/connector/cpp/
 
 This should be done such that the directories are as follows:
 	~/mysql-connector-cpp/include/cppconn
