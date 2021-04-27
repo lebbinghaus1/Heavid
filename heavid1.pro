@@ -10,14 +10,17 @@ CONFIG += c++11
 
 SOURCES += \
     database.cpp \
+    exercise_description.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     database.h \
+    exercise_description.h \
     mainwindow.h
 
 FORMS += \
+    exercise_description.ui \
     mainwindow.ui
 
 # Default rules for deployment.
@@ -30,7 +33,14 @@ RESOURCES += \
 
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../usr/lib/release/ -lmysqlcppconn
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../usr/lib/debug/ -lmysqlcppconn
-else:unix: LIBS += -L$$PWD/../../../usr/lib/ -lmysqlcppconn
+macx: LIBS += -L$$PWD/../../mysql-connector-c++-1.1.13-macos10.14-x86-64bit/lib/ -lmysqlcppconn.7.1.1.13
+unix:!macx: LIBS += -L$$PWD/../../../../../usr/lib/ -lmysqlcppconn
 
 INCLUDEPATH += $$PWD/../../../usr/include
 DEPENDPATH += $$PWD/../../../usr/include
+
+INCLUDEPATH += $$PWD/../../mysql-connector-c++-1.1.13-macos10.14-x86-64bit/include
+DEPENDPATH += $$PWD/../../mysql-connector-c++-1.1.13-macos10.14-x86-64bit/include
+
+INCLUDEPATH += $$PWD/../../../../../usr/include
+DEPENDPATH += $$PWD/../../../../../usr/include

@@ -15,6 +15,7 @@ public:
     database() {};
     sql::ResultSet * query(std::string);
     std::string createQueryStatement(std::string = "", std::string = "");
+    std::string createDescQueryStatement(std::string= "");
 };
 
 #endif // DATABASE_H
