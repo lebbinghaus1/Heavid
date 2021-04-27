@@ -6,4 +6,4 @@ This should be done such that the directories are as follows:
 
 This is critical for newer versions of Connector/C++ which host the legacy files used for Heavid in the jdbc subfolder.
 
-Alternatively, if you are using a Linux/GNU Operating System, you can leave this directory empty and install the library to /usr/lib and /usr/include 
+Alternatively, if you are using a Linux/GNU Operating System, you can leave this directory empty and install the library to /usr/lib and header files to /usr/include 
