@@ -19,18 +19,6 @@ int main(int argc, char *argv[])
     QSplashScreen *splash=new QSplashScreen;
     splash->setPixmap(QPixmap(":/resources/img/Heavid.png"));
     splash->show();
-    /*
-
-    QMovie *movie = new QMovie(":/resources/img/Heavid fin.gif");
-    QLabel* processLabel = new QLabel;
-    processLabel->resize(500,500);  // to make sure its large enough
-
-    processLabel->setMovie(movie);
-    processLabel->setWindowFlags(Qt::FramelessWindowHint);
-    processLabel->setAlignment(Qt::AlignCenter);
-    processLabel->show();
-    movie->start();
-    */
 
     MainWindow w;
 
